@@ -8,6 +8,7 @@ copy .env.example .env
 docker-compose -f docker-compose.dev.yml up -d
 
 bun install
+bun db:migrate
 bun db:generate
 
 bun run dev
