@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Parcels" ALTER COLUMN "status" SET DEFAULT 'PENDING';

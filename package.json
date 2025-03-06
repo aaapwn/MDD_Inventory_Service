@@ -3,10 +3,19 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:studio": "bunx prisma studio",
+    "db:generate": "bunx prisma generate"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/jwt": "^1.2.0",
+    "@elysiajs/swagger": "^1.2.2",
+    "@prisma/client": "^6.4.1",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "elysia": "latest",
+    "prisma": "^6.4.1"
   },
   "devDependencies": {
     "bun-types": "latest"
